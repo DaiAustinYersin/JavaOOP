@@ -1,11 +1,14 @@
 package bai1;
 
+import bai1.objects.CongNhan;
+import bai1.objects.KySu;
+import bai1.objects.NhanVien;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        QLCB ql = new QLCB();
+        QuanLyCanBo ql = new QuanLyCanBo();
         ql.init();
         Scanner sc = new Scanner(System.in);
         String chon;
@@ -24,15 +27,20 @@ public class Main {
                             System.out.print("Nhập tên công nhân: ");
                             String name = sc.nextLine();
 
-                            int age;
+                            int age = 0;
                             while (true) {
                                 try {
                                     System.out.print("Nhập tuổi: ");
                                     age = sc.nextInt();
                                     sc.nextLine();
+                                    if (age <= 0) {
+                                        System.out.println("Tuổi không hợp lệ");
+                                        continue;
+                                    }
                                     break;
                                 } catch (Exception e) {
                                     System.out.println("Tuổi không hợp lệ");
+                                    return;
                                 }
                             }
 
@@ -67,15 +75,20 @@ public class Main {
                             System.out.print("Nhập tên kỹ sư: ");
                             String name = sc.nextLine();
 
-                            int age;
+                            int age = 0;
                             while (true) {
                                 try {
                                     System.out.print("Nhập tuổi: ");
                                     age = sc.nextInt();
                                     sc.nextLine();
+                                    if (age <= 0) {
+                                        System.out.println("Tuổi không hợp lệ");
+                                        continue;
+                                    }
                                     break;
                                 } catch (Exception e) {
                                     System.out.println("Tuổi không hợp lệ");
+                                    return;
                                 }
                             }
 
@@ -97,18 +110,23 @@ public class Main {
                             break;
                         }
                         case "3": {
-                            System.out.print("Nhập tên công nhân: ");
+                            System.out.print("Nhập tên nhân viên: ");
                             String name = sc.nextLine();
 
-                            int age;
+                            int age = 0;
                             while (true) {
                                 try {
                                     System.out.print("Nhập tuổi: ");
                                     age = sc.nextInt();
                                     sc.nextLine();
+                                    if (age <= 0) {
+                                        System.out.println("Tuổi không hợp lệ");
+                                        continue;
+                                    }
                                     break;
                                 } catch (Exception e) {
                                     System.out.println("Tuổi không hợp lệ");
+                                    return;
                                 }
                             }
 

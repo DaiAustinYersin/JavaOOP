@@ -1,19 +1,20 @@
 package bai1;
 
+import bai1.objects.CongNhan;
+import bai1.objects.CanBo;
+import bai1.objects.KySu;
+import bai1.objects.NhanVien;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class QLCB {
+public class QuanLyCanBo {
     
     private List<CanBo> list;
 
-    public QLCB() {
+    public QuanLyCanBo() {
         list = new ArrayList<>();
     }
-
-    Scanner sc = new Scanner(System.in);
 
     void init() {
         list.add(new CongNhan("A", 19, 'M', "BN", 2));
@@ -26,7 +27,7 @@ public class QLCB {
     }
 
     public List<CanBo> timKiemHoTen(String hoTen) {
-        return this.list.stream().filter(o -> o.getHoTen().contains(hoTen)).collect(Collectors.toList());
+        return this.list.stream().filter(cb -> cb.getHoTen().contains(hoTen)).collect(Collectors.toList());
     }
 
     public void thongTinDS() {

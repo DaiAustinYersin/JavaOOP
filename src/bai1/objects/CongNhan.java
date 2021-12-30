@@ -1,4 +1,4 @@
-package bai1;
+package bai1.objects;
 
 public class CongNhan extends CanBo {
 
