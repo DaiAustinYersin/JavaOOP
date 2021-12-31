@@ -11,7 +11,7 @@ package bai2.objects;
  */
 public class Bao extends TaiLieu {
 
-    protected int ngayPhatHanh;
+    private int ngayPhatHanh;
 
     public Bao() {
     }

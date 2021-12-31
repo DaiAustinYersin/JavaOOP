@@ -11,8 +11,8 @@ package bai2.objects;
  */
 public class Sach extends TaiLieu {
 
-    protected String tacGia;
-    protected int soTrang;
+    private String tacGia;
+    private int soTrang;
 
     public Sach() {
     }

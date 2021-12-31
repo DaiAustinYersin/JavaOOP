@@ -11,8 +11,8 @@ package bai2.objects;
  */
 public class TapChi extends TaiLieu{
     
-    protected int soPhatHanh;
-    protected int thangPhatHanh;
+    private int soPhatHanh;
+    private int thangPhatHanh;
 
     public TapChi() {
     }
