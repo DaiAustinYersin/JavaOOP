@@ -1,0 +1,27 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package bai14;
+
+/**
+ *
+ * @author DaiAustinYersin
+ */
+public enum ApplicationNum {
+    MAX(15), MIN(11);
+    private int value;
+
+    private ApplicationNum(int value) {
+        this.value = value;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
+}
